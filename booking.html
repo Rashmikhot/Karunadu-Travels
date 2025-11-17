@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking – Karunadu Travel</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('img/slider1.jpg') no-repeat center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* MAIN BOOKING BOX */
+        .booking-container {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            border-radius: 18px;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+            color: white;
+
+            width: 320px;           /* Smaller box */
+            padding: 18px;
+            margin: auto;           
+            text-align: center;
+
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+            font-size: 14px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border-radius: 6px;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #ff9800;
+            color: white;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .home-btn {
+            display: block;
+            margin-top: 15px;
+            color: #fff;
+            text-decoration: underline;
+            font-size: 14px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="booking-container">
+        <h2>Book Your Trip</h2>
+
+        <label>Your Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Phone Number</label>
+        <input type="text" placeholder="Enter your phone">
+
+        <label>Select Package</label>
+        <select>
+            <option>Coorg Nature Escape</option>
+            <option>Mysuru Heritage Tour</option>
+            <option>Hampi Royal Trail</option>
+            <option>Gokarna Beach Trip</option>
+        </select>
+
+        <label>Travel Date</label>
+        <input type="date">
+
+        <a href="#" class="btn">Confirm Booking</a>
+
+        <a href="index.html" class="home-btn">Back to Home</a>
+    </div>
+
+<script>
+   const bookingBtn = document.querySelector('.btn');
+
+bookingBtn.addEventListener('click', async (e) => {
+    e.preventDefault();
+
+    const data = {
+        name: document.querySelector('input[placeholder="Enter your name"]').value,
+        email: document.querySelector('input[placeholder="Enter your email"]').value,
+        phone: document.querySelector('input[placeholder="Enter your phone"]').value,
+        package: document.querySelector('select').value,
+        date: document.querySelector('input[type="date"]').value
+    };
+
+    try {
+        const res = await fetch('/booking', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        });
+
+        if (res.ok) {
+            const msg = await res.text();
+            alert(msg); // Booking successful!
+        } else {
+            const errMsg = await res.text();
+            alert(errMsg); // Booking failed
+        }
+    } catch (err) {
+        console.error(err);
+        alert('Something went wrong!');
+    }
+});
+
+</script>
+</body>
+</html>

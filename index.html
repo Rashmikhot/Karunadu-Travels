@@ -1,0 +1,817 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Karunadu Travels</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/main.css">
+
+
+			  <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f4f6f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .package-section {
+            padding: 50px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .package-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            max-width: 1200px;
+        }
+
+        .package-box {
+            background: #fff;
+            width: 270px;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0px 5px 20px rgba(0,0,0,0.12);
+            transition: 0.3s ease-in-out;
+        }
+
+        .package-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.18);
+        }
+
+        .package-image {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+        }
+
+        .package-content {
+            padding: 18px;
+        }
+
+        .package-content h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .price {
+            font-size: 22px;
+            color: #6a5bff;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .duration {
+            font-size: 14px;
+            color: #444;
+            margin-bottom: 12px;
+        }
+
+        .description {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .stars {
+            color: #ffbb00;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .package-content button {
+            width: 100%;
+            padding: 12px;
+            background: #6a5bff;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .package-content button:hover {
+            background: #5848e4;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .package-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+		/* Heading for Plans - high specificity to avoid overrides */
+#plans-heading {
+    display: block;
+    text-align: center !important;
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    margin: 40px 0 20px 0 !important; /* space above and below the heading */
+    color: #333 !important;
+    line-height: 1.1;
+}
+
+/* Small responsive tweak so it looks good on mobile */
+@media (max-width: 480px) {
+    #plans-heading {
+        font-size: 22px !important;
+        margin: 28px 0 14px 0 !important;
+    }
+}
+
+/* Styling for the main H1 text logo */
+.navbar-brand h1 {
+    color: #FFC107; /* Base color for "Karunadu" */
+    font-size: 2.2rem;
+    font-family: 'Poppins', sans-serif; /* Requires linking Google Font */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    line-height: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for the contrasting "Travels" part */
+.navbar-brand h1 span {
+    color: red; /* Contrasting color, e.g., Gold/Yellow */
+    font-weight: 400;
+    margin-left: 5px;
+    letter-spacing: 1px;
+}
+
+/* Styling for the Font Awesome icon (Compass) */
+.navbar-brand h1 .fas {
+    color: #FFC107; /* Match the 'Travels' color */
+    margin-right: 10px;
+    font-size: 1.8rem; /* Slightly smaller than the main text */
+}
+/* Resize only the left-side About section image */
+.info-left .info-thumb img {
+    max-width: 80%;   /* image will be at most 80% of its container */
+    height: auto;     /* keeps aspect ratio */
+    display: block;   /* ensures proper spacing */
+    margin: 0 auto;   /* centers the image horizontally */
+}
+
+
+
+    </style>
+		</head>
+		
+		<body>
+			<!-- start banner Area -->
+			<section class="banner-area" id="home">
+				<!-- Start Header Area -->
+			<header class="default-header">
+    <nav class="navbar navbar-expand-lg  navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <h1><i class="fa-solid fa-location-dot"></i> Karunadu <span>Travels</span></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="text-white lnr lnr-menu"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#secvice">Service</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#faq">Faq</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+				<!-- End Header Area -->				
+			</section>
+
+			<section class="default-banner active-blog-slider">
+					<div class="item-slider relative" style="background: url(img/slider1.jpg);background-size: cover;">
+						<div class="overlay" style="background: rgba(0,0,0,.3)"></div>
+						<div class="container">
+							<div class="row fullscreen justify-content-center align-items-center">
+								<div class="col-md-10 col-12">
+									<div class="banner-content text-center">
+										<h4 class="text-white mb-20 text-uppercase">Discover the Colorful State</h4>
+										<h1 class="text-uppercase text-white">New Adventure</h1>
+										<p class="text-white">“Pack your dreams, chase new horizons, and dive into experiences that awaken your soul — your next adventure starts the moment you decide to go.”</p>
+										<a href="#plans-heading" class="text-uppercase header-btn">Discover Now</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="item-slider relative" style="background: url(img/slider2.jpg);background-size: cover;">
+						<div class="overlay" style="background: rgba(0,0,0,.3)"></div>
+						<div class="container">
+							<div class="row fullscreen justify-content-center align-items-center">
+								<div class="col-md-10 col-12">
+									<div class="banner-content text-center">
+										<h4 class="text-white mb-20 text-uppercase">Discover the Colorful State</h4>
+										<h1 class="text-uppercase text-white">New Trip</h1>
+										<p class="text-white">“Every new trip is a chance to rewrite your story — to explore, feel alive, and collect moments that last forever.”</p>
+										<a href="#plans-heading" class="text-uppercase header-btn">Discover Now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item-slider relative" style="background: url(img/slider3.jpg);background-size: cover;">
+						<div class="overlay" style="background: rgba(0,0,0,.3)"></div>
+						<div class="container">
+							<div class="row fullscreen justify-content-center align-items-center">
+								<div class="col-md-10 col-12">
+									<div class="banner-content text-center">
+										<h4 class="text-white mb-20 text-uppercase">Discover the Colorful State</h4>
+										<h1 class="text-uppercase text-white">New Experience</h1>
+										<p class="text-white">“Every journey opens the door to something new — new places, new people, new experiences that change the way you see the world.”</p>
+										<a href="#plans-heading" class="text-uppercase header-btn">Discover Now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Start about Area -->
+			<section class="section-gap info-area" id="about">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-40 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Why Choose Karunadu Travels for Your Next Trip</h1>
+								<p>Where every journey begins with ease and ends with unforgettable memories.</p>
+							</div>
+						</div>
+					</div>					
+					<div class="single-info row mt-40">
+						<div class="col-lg-6 col-md-12 mt-120 text-center no-padding info-left">
+							<div class="info-thumb">
+								<img src="img/About12.jpg" class="img-fluid" alt="">
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-12 no-padding info-rigth">
+							<div class="info-content">
+								<h2 class="pb-30">We Turn Every Journey
+                             <br>
+							Into a Heartfelt Karnataka Experience </h2>
+								<p>
+									At <strong> Karunadu Travels,</strong>we believe a trip is not just moving from place to place. It is a celebration of heritage culture nature and the stories that make Karnataka truly unforgettable.
+								<br>
+								<p>
+									Our smart travel management services help you plan organize and explore every corner of Karunadu with ease. From misty mountains to royal palaces your perfect getaway is waiting to be discovered.
+								</p>
+								<br>
+								<p>
+									From exploring hidden gems like Hampi and Gokarna to enjoying iconic wonders like Mysore Palace and Coorg coffee 
+									plantations Karunadu Travels blends modern travel convenience with the soulful charm of Karnataka. With personalized
+									itineraries real time travel assistance and a deep love for our land we turn every trip into a memory you will cherish forever.
+								</p>
+								</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End about Area -->
+			
+			
+			<!-- Start Destination Area -->
+			<section class="project-area section-gap" id="project">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-30 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Destinations</h1>
+								<h5>Karnataka is a land where culture, heritage, and nature unite to create unforgettable journeys filled with wonder and beauty. 🌿✨</h5>
+								<p><b>🌄Discover the hidden gems of Karnataka <br>where every destination tells a story.</b></p>
+							</div>
+						</div>
+					</div>						
+					<div class="row justify-content-center d-flex">
+						<div class="active-works-carousel mt-40 col-lg-8">
+							<div class="item">
+								<img class="img-fluid" src="img/Mysore-Palace.jpg" alt="">
+								<div class="caption text-center mt-20">
+									<h6 class="text-uppercase">Mysore-Palace</h6>
+									<p>Mysore Palace tells the story of timeless royalty, where every corridor glows with the grace of a golden era.<br>
+                                Beneath its shimmering lights, history comes alive with pride and majestic beauty. ✨🏰
+                                </p>
+								</div>
+							</div>
+							<div class="item">
+								<img class="img-fluid" src="img/Hampi.jpg" alt="">
+								<div class="caption text-center mt-20">
+									<h6 class="text-uppercase">Hampi</h6>
+									<p>Hampi is a timeless wonder where ancient ruins rise with stories of glory and devotion.
+                                   <br>Every stone here echoes the spirit of a golden kingdom lost in beauty and history🏛️✨</p>
+								</div>
+							</div>
+							<div class="item">
+								<img class="img-fluid" src="img/maravanthe.png" alt="">
+								<div class="caption text-center mt-20">
+									<h6 class="text-uppercase">Maravanthe Beach</h6>
+									<p>Maravanthe Beach is where the sea meets the road, creating a stunning view of waves and mountains.
+                                    <br>Its golden sands and calm waters make every sunset feel magical🌊✨ </p>
+								</div>
+							</div>
+							<div class="item">
+								<img class="img-fluid" src="img/muradeshwar.jpg" alt="">
+								<div class="caption text-center mt-20">
+									<h6 class="text-uppercase">Murudeshwar</h6>
+									<p>Murudeshwar is a spiritual haven where the towering Shiva statue meets the endless sea, 
+									<br>creating a breathtaking blend of devotion and natural beauty🌊🕉️</p>
+								</div>
+							</div>
+							<div class="item">
+								<img class="img-fluid" src="img/Yana.jpg" alt="">
+								<div class="caption text-center mt-20">
+									<h6 class="text-uppercase">Yana</h6>
+									<p>Yana is a hidden marvel surrounded by lush forests and mystic rock formations.
+                                     Its calm beauty and spiritual energy make it a place of wonder and peace🌿✨</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End project Area -->
+
+
+			<!-- Start feature Area -->
+			<section class="feature-area section-gap" id="secvice">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Services</h1>
+								<p>Who are in extremely love with eco friendly system.</p>
+							</div>
+						</div>
+					</div>						
+					<div class="row">
+						<div class="col-lg-4 col-md-6 ">
+							<div class="single-feature mb-30">
+								<div class="title d-flex flex-row pb-20">
+									<span class="lnr lnr-user"></span>
+									<h4><a href="#">Local Travel Experts</a></h4>
+								</div>
+								<p>
+									Our experienced guides ensure you explore Karnataka like a local, with hidden gems and authentic experiences
+								</p>							
+							</div>							
+						</div>
+						<div class="col-lg-4 col-md-6 ">
+							<div class="single-feature mb-30">
+								<div class="title d-flex flex-row pb-20">
+									<span class="lnr lnr-license"></span>
+									<h4><a href="#">Personalized Itineraries</a></h4>
+								</div>
+								<p>
+									Tailor-made travel plans to suit your preferences, whether it’s culture, adventure, or relaxation
+								</p>							
+							</div>							
+						</div>
+						<div class="col-lg-4 col-md-6 ">
+							<div class="single-feature mb-30">
+								<div class="title d-flex flex-row pb-20">
+									<span class="lnr lnr-phone"></span>
+									<h4><a href="#">24/7 Travel Assistance</a></h4>
+								</div>
+								<p>
+									We’re always here to help you, from planning your trip to on-the-go support during your journey
+								</p>							
+							</div>							
+						</div>
+						<div class="col-lg-4 col-md-6 ">
+							<div class="single-feature">
+								<div class="title d-flex flex-row pb-20">
+									<span class="lnr lnr-rocket"></span>
+									<h4><a href="#">Adventure & Activities</a></h4>
+								</div>
+								<p>
+									Exciting activities across Karnataka — trekking, wildlife safaris, river rafting, and more
+								</p>							
+							</div>							
+						</div>
+						<div class="col-lg-4 col-md-6 ">
+							<div class="single-feature">
+								<div class="title d-flex flex-row pb-20">
+									<span class="lnr lnr-diamond"></span>
+									<h4><a href="#">Best Destinations</a></h4>
+								</div>
+								<p>
+									Handpicked destinations like Mysore, Hampi, Coorg, Gokarna, and many more must-see places
+								</p>							
+							</div>							
+						</div>
+						<div class="col-lg-4 col-md-6 ">
+							<div class="single-feature">
+								<div class="title d-flex flex-row pb-20">
+									<span class="lnr lnr-bubble"></span>
+									<h4><a href="#">Memorable Experiences</a></h4>
+								</div>
+								<p>
+									Creating unforgettable memories with safe, fun, and culturally rich experiences across Karnataka.
+								</p>							
+							</div>							
+						</div>																					
+					</div>
+				</div>	
+			</section>
+			<!-- End feature Area -->
+
+
+			<!-- Start gallery Area -->
+			<section class="gallery-area" id="gallery">
+				<div class="container-fluid">
+					<div class="row no-padding">
+						<div class="active-gallery">
+							<div class="item single-gallery">
+								<img src="img/BengloreView.jpg" alt="">
+							</div>	
+							<div class="item single-gallery">
+								<img src="img/HampiView.jpg" alt="">
+							</div>	
+							<div class="item single-gallery">
+								<img src="img/UdupiView.jpg" alt="">
+							</div>	
+							<div class="item single-gallery">
+								<img src="img/MysoreView.jpg" alt="">
+							</div>	
+							<div class="item single-gallery">
+								<img src="img/allinone.jpg" alt="">
+							</div>	
+							<div class="item single-gallery">
+								<img src="img/coorgView.jpg" alt="">
+							</div>																		
+						</div>
+					</div>
+				</div>	
+
+			</section>
+			<!-- End gallery Area -->
+	
+<h2 id="plans-heading">Perfect Travel Plans</h2>
+<section class="package-section">
+    <div class="package-container">
+
+        <!-- BOX 1 -->
+        <div class="package-box">
+            <img src="img/Box1.jpg" class="package-image">
+            <div class="package-content">
+                <h3>Coorg Nature Escape</h3>
+                <p class="price">₹6,499</p>
+                <p class="duration">2 Days / 1 Night</p>
+                <p class="description">Coffee plantations, waterfalls, and misty hills for a peaceful getaway.</p>
+                <div class="stars">★★★★★</div>
+            <a href="booking.html" class="btn">Book Now</a>
+        </div>
+        </div>
+
+
+		
+        <!-- BOX 2 -->
+        <div class="package-box">
+            <img src="img/Box2.jpg" class="package-image">
+            <div class="package-content">
+                 <h3>Mysore Royal Tour</h3>
+                <p class="price">₹4,999</p>
+                <p class="duration">2 Days / 1 Night</p>
+               <p class="description">Visit Mysore Palace, Chamundi Hills, Brindavan Gardens and heritage sites.</p>
+                <div class="stars">★★★★★</div>
+            <a href="booking.html" class="btn">Book Now</a>
+        </div>
+        </div>
+
+
+		 <!-- BOX 3 -->
+        <div class="package-box">
+            <img src="img/Box3.jpg" class="package-image">
+            <div class="package-content">
+              <h3>Hampi Heritage Trail</h3>
+                <p class="price">₹7,999</p>
+                <p class="duration">2 Days / 1 Night</p>
+              <p class="description">Explore temples, monuments and ancient ruins of the Vijayanagara Empire.</p>
+                <div class="stars">★★★★★</div>
+            <a href="booking.html" class="btn">Book Now</a>
+        </div>
+        </div>
+
+
+		 <!-- BOX 3 -->
+        <div class="package-box">
+            <img src="img/Box4.jpg" class="package-image">
+            <div class="package-content">
+             <h3>Coastal Karnataka</h3>
+                <p class="price">₹8,999</p>
+                <p class="duration">2 Days / 1 Night</p>
+               <p class="description">Enjoy Gokarna beaches, Murudeshwar temple, and scenic Maravanthe coast.</p>
+                <div class="stars">★★★★★</div>
+            <a href="booking.html" class="btn">Book Now</a>
+        </div>
+	</div>
+
+
+	  <!-- BOX 5 - Bengaluru -->
+<div class="package-box">
+    <img src="img/Box5.jpg" class="package-image">
+    <div class="package-content">
+        <h3>Bengaluru City Explorer</h3>
+        <p class="price">₹5,999</p>
+        <p class="duration">1 Day Trip</p>
+        <p class="description">
+            Explore Cubbon Park, Vidhana Soudha, Lalbagh, and the vibrant city life of Bengaluru.
+        </p>
+        <div class="stars">★★★★☆</div>
+        <a href="booking.html" class="btn">Book Now</a>
+    </div>
+</div>
+
+<!-- BOX6 - Vijayapura -->
+<div class="package-box">
+    <img src="img/Box6.jpg" class="package-image">
+    <div class="package-content">
+        <h3>Vijayapura Heritage Tour</h3>
+        <p class="price">₹6,999</p>
+        <p class="duration">2 Days / 1 Night</p>
+        <p class="description">
+            Discover the Gol Gumbaz, Bara Kaman, and the rich Indo-Islamic heritage of Vijayapura.
+        </p>
+        <div class="stars">★★★★☆</div>
+        <a href="booking.html" class="btn">Book Now</a>
+    </div>
+</div>
+
+
+<!-- BOX7: Chalukya Heritage Circuit -->
+<div class="package-box">
+    <img src="img/Box7.jpg" class="package-image">
+    <div class="package-content">
+        <h3>Chalukya Heritage Circuit</h3>
+        <p class="price">₹7,999</p>
+        <p class="duration">2 Days / 1 Night</p>
+        <p class="description">
+            Explore the ancient rock-cut caves of Badami, temples of Pattadakal,  
+            and the cradle of Chalukyan architecture in Aihole.
+        </p>
+        <div class="stars">★★★★★</div>
+        <a href="booking.html" class="btn">Book Now</a>
+    </div>
+</div>
+
+<!-- BOX – Chikkamagaluru -->
+<div class="package-box">
+    <img src="img/Box8.jpg" class="package-image">
+    <div class="package-content">
+        <h3>Chikkamagaluru Coffee Retreat</h3>
+        <p class="price">₹7,299</p>
+        <p class="duration">2 Days / 1 Night</p>
+        <p class="description">
+            Explore Mullayanagiri, Baba Budangiri and serene coffee estates in Karnataka’s hill paradise.
+        </p>
+        <div class="stars">★★★★★</div>
+        <a href="booking.html" class="btn">Book Now</a>
+    </div>
+</div>
+    </div>
+</section>
+
+
+
+			
+			
+			<!-- Start faq Area -->
+			<section class="faq-area section-gap" id="faq">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Frequently Asked Questions</h1>
+								<p>Everything you need to know before you travel.</p>
+							</div>
+						</div>
+					</div>							
+					<div class="row d-flex align-items-center">
+						<div class="counter-left col-lg-3 col-md-3">
+							<div class="single-facts">
+								<h2 class="counter">12450</h2>
+								<p>Happy Travelers</p>							
+							</div>
+							<div class="single-facts">
+								<h2 class="counter">320</h2>
+								<p>Curated Karnataka Trips</p>							
+							</div>
+							<div class="single-facts">
+								<h2 class="counter">75</h2>
+								<p>Destinations Covered</p>							
+							</div>												
+							<div class="single-facts">
+								<h2><span class="counter">24</span>/7</h2>
+								<p>Travel Support</p>							
+							</div>
+						</div>	
+						<div class="faq-content col-lg-9 col-md-9">
+							<div class="single-faq">
+								<h2 class="text-uppercase">
+								What types of Karnataka trip packages do you offer?
+								</h2>
+								<p>
+									We provide curated packages covering heritage sites, hill stations, beaches, wildlife, and adventure spots across Karnataka.
+								</p>
+							</div>
+							<div class="single-faq">
+								<h2 class="text-uppercase">
+								Are the packages customizable?
+								</h2>
+								<p>
+									Yes! You can customize the itinerary, budget, travel dates, and stay options to match your preferences.
+								</p>
+							</div>
+							<div class="single-faq">
+								<h2 class="text-uppercase">
+									Do you offer budget-friendly trips?
+								</h2>
+								<p>
+								Absolutely. We design pocket-friendly and premium packages so every traveler can explore Karnataka comfortably.
+								</p>
+							</div>	
+							<div class="single-faq">
+								<h2 class="text-uppercase">
+								How do I book a trip package?
+								</h2>
+								<p>
+									Go to our Plans section and click Book Now, or message us through the Contact page.
+								</p>
+							</div>											
+						</div>									
+					</div>
+				</div>
+			</section>
+			<!-- End faq Area -->
+			
+			
+			<!-- Start Video Area -->
+			<section class="video-area pt-40 pb-40">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="video-content">
+						<a href="img/Script your Adventure ｜ Karnataka Tourism ｜ One State, Many Worlds.mp4" class="play-btn"><img src="img/play-btn.png" alt=""></a>
+						<div class="video-desc">
+							<h3 class="h2 text-white text-uppercase">Discover Karnataka, One Magical Place at a Time</h3>
+							<h4 class="text-white">From historic palaces to serene beaches, explore the heart of South India with us</h4>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Start Video Area -->
+			
+			
+			<!-- Start logo Area -->
+			<section class="logo-area">
+				<div class="container">
+					<div class="row">
+						
+					</div>
+				</div>	
+			</section>
+			<!-- End logo Area -->
+			
+							
+			<!-- start contact Area -->		
+<section class="contact-area section-gap" id="contact">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="menu-content pb-60 col-lg-8">
+        <div class="title text-center">
+          <h1 class="mb-10">Let’s plan your next unforgettable journey together</h1>
+          <p>We are here to make your travel dreams come true let’s connect!</p>
+        </div>
+      </div>
+    </div>										
+    <form class="form-area contact-form text-right" id="contactForm">
+      <div class="row">	
+        <div class="col-lg-6 form-group">
+          <input name="name" placeholder="Enter your name" class="common-input mb-20 form-control" required type="text">
+          <input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" class="common-input mb-20 form-control" required type="email">
+          <input name="subject" placeholder="Enter your subject" class="common-input mb-20 form-control" required type="text">
+        </div>
+        <div class="col-lg-6 form-group">
+          <textarea class="common-textarea mt-10 form-control" name="message" placeholder="Message" required></textarea>
+          <button type="submit" class="primary-btn mt-20">Send Message<span class="lnr lnr-arrow-right"></span></button>
+          <div class="alert-msg"></div>
+        </div>
+      </div>
+    </form>						
+  </div>	
+</section>
+<!-- end contact Area -->
+
+			
+			<!-- start footer Area -->		
+			<footer class="footer-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>About Us</h6>
+								<p>
+									Discover the hidden gems and timeless beauty of Karnataka with us. Your journey through Karunadu starts here
+								</p>
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            		<p class="footer-text">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Designed <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">RL</a></p>
+            		<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</div>
+						</div>
+						<div class="col-lg-5  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>Newsletter</h6>
+								<p>Stay update with our latest</p>
+								<div class="" id="mc_embed_signup">
+
+										<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
+
+										<div class="d-flex flex-row">
+
+											<input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
+
+
+				                            	<button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+				                            	<div style="position: absolute; left: -5000px;">
+													<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+												</div>
+				                          	
+											<!-- <div class="col-lg-4 col-md-4">
+												<button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>
+											</div>  -->
+										</div>		
+										<div class="info"></div>
+										</form>
+								</div>
+								</div>
+						</div>						
+						<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+							<div class="single-footer-widget">
+								<h6>Follow Us</h6>
+								<p>Let us be social</p>
+								<div class="footer-social d-flex align-items-center">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-dribbble"></i></a>
+									<a href="#"><i class="fa fa-behance"></i></a>
+								</div>
+							</div>
+						</div>							
+					</div>
+				</div>
+			</footer>	
+			<!-- End footer Area -->			
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+			<script src="js/owl.carousel.min.js"></script>			
+			<script src="js/jquery.sticky.js"></script>
+			<script src="js/slick.js"></script>
+			<script src="js/jquery.counterup.min.js"></script>
+			<script src="js/waypoints.min.js"></script>		
+			<script src="js/main.js"></script>	
+		</body>
+	</html>
